@@ -1,7 +1,5 @@
 <?php
-     if(!isset($_SESSION)){
-          session_start();
-     }
+    include('protect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,5 +11,6 @@
 <body>
      <h1>Pagina Principal</h1>
      <p>Bem vindo <?php echo $_SESSION['email']?></p>
+     <a href="logout.php">Sair </a>
 </body>
 </html>
